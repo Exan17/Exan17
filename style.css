@@ -1,39 +1,81 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling untuk keseluruhan halaman */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background: linear-gradient(135deg, #000000, #1a1a1a); /* Gradiasi warna hitam */
+  color: #f0f0f0; /* Warna teks terang agar kontras dengan latar belakang gelap */
   margin: 0;
   padding: 0;
 }
 
+/* Styling untuk header */
 header {
-  background-color: #4CAF50;
+  background: linear-gradient(135deg, #0d47a1, #1976d2); /* Gradiasi warna biru */
   color: white;
-  padding: 1rem;
+  padding: 1.5rem;
   text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Efek bayangan untuk tampilan modern */
 }
 
+/* Styling untuk section (tentang dan proyek) */
 section {
-  margin: 20px;
+  margin: 30px;
+  padding: 20px;
+  background-color: #222222; /* Background hitam keabuan */
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6); /* Efek bayangan */
 }
 
+/* Styling untuk judul section */
 h2 {
-  color: #4CAF50;
+  color: #64b5f6; /* Warna biru muda */
+  margin-bottom: 15px;
 }
 
+/* Styling untuk list proyek */
 ul {
   list-style-type: none;
   padding: 0;
 }
 
+/* Styling untuk item proyek */
 ul li {
-  background-color: #e4e4e4;
-  margin: 5px 0;
-  padding: 10px;
-  border-radius: 5px;
+  background: linear-gradient(135deg, #1e88e5, #1565c0); /* Gradasi biru untuk item */
+  color: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out; /* Animasi ketika hover */
 }
 
+ul li:hover {
+  transform: scale(1.05); /* Sedikit perbesaran saat hover */
+}
+
+/* Styling untuk footer */
 footer {
   text-align: center;
-  margin: 20px 0;
+  padding: 20px;
+  background-color: #0d47a1; /* Warna biru lebih tua */
+  color: white;
+  margin-top: 30px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5); /* Efek bayangan di atas */
+}
+
+/* Media query untuk tampilan responsif */
+@media (max-width: 768px) {
+  section {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  ul li {
+    padding: 10px;
+  }
 }
